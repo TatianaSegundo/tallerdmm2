@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Crónica</title>
+  
+ <!----------------------JAVASCRIPT------------------------->
+ <script src="js/feedback.js" type="text/javascript"></script>
   <link rel="stylesheet" href="estilos/estilos.css">
   <!--  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <script type="text/javascript" src="js/materialize.min.js"></script> -->
@@ -41,8 +44,6 @@
             <li><img src="img/menu.png" alt=""></li>
             <li>Menu</li>
         </ul>
-
-
         <ul>
           <-  <img src="img/menu.png" alt=""> >
           <li class="menu"><img src="img/menu.png" alt=""> <a href="#">Menú</a>  </li>
@@ -52,9 +53,7 @@
       <div class="cronica">
         <img src="img/cronica.png" alt="">
       </div>
-
     </div>
-
   </header-->
     </section>
 
@@ -88,36 +87,45 @@
 
     <select name="ordenar" id="ordenar">
       <option class="ordenarPor"  required selected disabled >Más recientes</option>
-      <option value="Shakira y Piqué">Más recinetes</option>
+      <option value="Shakira y Piqué">Más recientes</option>
       <option value="superclásico">Más me gusta</option>
     </select>
-    <!--input type="checkbox" name="drop" id="drop">
-    <label for="drop">Shakira y Piqué</label>
-    <ul>
-      <li><a href="#" title="Shakira y Piqué">Shakira y Piqué</a></li>
-      <li><a href="#" title="Superclásico">Do something else</a></li>
-      <li><a href="#" title="Concierto Tini">Concierto Tini</a></li>
-      <li><a href="#" title="Maria Becerra">Maria Becerra</a></li>
-    </ul-->
-
-    <!--button class="dropbtn">Shakira y Piqué</button>
-    <div class="dropdown-contenido">
-      <a href="#">Superclásico</a>
-      <a href="#">Concierto Tini</a>
-      <a href="#">Maria Becerra</a>
-    </div-->
   </div>
 
   <!-----------------1ERA FILA DE PLACAS-------------->
   <div class="container">
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
   </div>
 
@@ -127,12 +135,36 @@
   <div class="container">
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
   </div>
 
@@ -145,7 +177,24 @@
     </div>
     <div class="cardsplac">
         <img id="plac-anuncio" src="img/p1.png" alt=""><br>
-        <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
+        <img id= "placa-creatuplaca.inf" src="img/p1.png" alt=""  style="
+        margin-top: 30px;" >
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
 </div>
 
@@ -155,12 +204,36 @@
   <div class="container">
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
   </div>
 
@@ -170,12 +243,36 @@
   <div class="container">
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
     <div class="card">
         <img src="img/p1.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
     </div>
   </div>
 
@@ -289,6 +386,7 @@
   <!----------------------DROPDOWN------------------>
   <div id="columna-madre-placas">
   <div id="columna-placas">
+  <form onsubmit="enviarPlaca(); return false">
   <div id="dropdownPlaca">
     <select name="temas" id="temasPlacas">
       <option class="opcionesDeTemas"  required selected disabled >Temas</option>
@@ -299,13 +397,21 @@
     </select>
   </div>
 
-     <textarea name="message" rows="10" cols="68" id="texto-form-placa">
-Texto de la placa
-      </textarea>
+     <!--textarea  name="message" placeholder="Texto de la placa" rows="10" cols="68" id="texto-form-placa" ></textarea-->
+
+     <textarea  name="message" placeholder="Texto de la placa" required placeholder  id="texto-form-placa" ></textarea>
 
       <div id="contenedor-nombre-placa-form">
         <input type="text" name="name" placeholder="Ingresa tu nombre (Opcional)" id="name" class="cont-formulario">
       </div>
+  </form>
+
+     
+  <div id="boton-placa-form">
+    <button  type="button" name="button">ENVIAR</button>
+     </div>
+   
+  
 
 
     <!--input type="checkbox" name="drop" id="drop">
@@ -325,15 +431,43 @@ Texto de la placa
     </div-->
 
 </div>
+
+
 <div id="columna-placas2">
   <img src="img/p1.png" alt="">
       </div>
     </div>
-<div id="boton-placa-form">
-  <button  type="button" name="button">ENVIAR</button>
-</div>
 
 </section>
+
+
+ <!----------------------FEEDBACK------------------------->
+<div class="fondo-feed no-mostrar" id="contenedor-feedback">
+  <section id="seccion-feedback" class="feed">
+    <h3>
+      !MUY BUENA PLACA!
+    </h3>
+    <p> 
+      No te olvides de compartir el resultado
+     </p>
+    <br />
+    <div class="contFeed">
+      <h2>
+        <span id="texto-puesto"></span>
+      </h2>
+      <ul>
+        <li> <img src="img/placaFeed.png" alt=""></li>
+        <li> <img src="img/compartir.png" alt=""></li>
+      </ul>
+    </div>
+    <!--button class="btn-feedback" onclick="cerrarFeedback()">Genial</button-->
+  </section><br><br>
+</div>
+
+
+
+
+
  <!----------------------CONTENEDOR DE NOTICIAS RELACIONADAS------------------------->
 
  <div class="noticrel">
@@ -356,6 +490,11 @@ Texto de la placa
 </div>
 
  <!----------------------FOOTER------------------------->
+
+
+
+
 </section>
+
 </body>
 </html>
