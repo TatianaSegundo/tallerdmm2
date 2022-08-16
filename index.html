@@ -55,7 +55,7 @@
   <br>
 
    
-
+<section id="general">
    <!---------------------------------CUERPO1----------------------------------->
   <section id="seccion-cuerpo1">
 
@@ -254,7 +254,7 @@
 
 
 
-
+</section>
    <!---------------------------------CUERPO2----------------------------------->
        <section id="seccion-cuerpo2">
 
@@ -430,31 +430,68 @@
           <form onsubmit="enviarFormulario(); return false">
 
             <!----------------------DROPDOWN------------------>
-            <select name="tema" id="tema">
+           <select name="tema" id="tema">
               <option selected disabled>Elegí un tema</option>
-              <option value="saab">SHAKIRA Y PIQUÉ</option>
-              <option value="mercedes">SUPERCLÁSICO</option>
-              <option value="audi">TINI CONCIERTO</option>
-              <option value="audi">MARIA BECERRA</option>
+              <option value="">SHAKIRA Y PIQUÉ</option>
+              <option value="">SUPERCLÁSICO</option>
+              <option value="">TINI CONCIERTO</option>
+              <option value="">MARIA BECERRA</option>
             </select>
             <br />
             <br />
-         
+
             <!--label for="fname">Escrbí el texto de tu placa</label-->
-            <textarea  type="text" for="texto"  id="texto" name="texto" placeholder="Escribí el texto de tu placa" required placeholder></textarea>
+            <textarea  type="text" for="texto"  id="texto"  name="texto" placeholder="Escribí el texto de tu placa" required placeholder disabled></textarea>
             <br />
+
+            <script>
+                $(document).ready(function () {
+                    $('#tema').change(function (e) {
+                      if ($(this).val() === "") {
+                        $('#texto').prop("disabled", false);
+                      } else {
+                        $('#texto').prop("disabled", true);
+                      }
+                    })
+                  });
+
+                  $(document).ready(function () {
+                      $('#tema').change(function (e) {
+                        if ($(this).val() === "") {
+                          $('#nombre').prop("disabled", false);
+                        } else {
+                          $('#nombre').prop("disabled", true);
+                        }
+                      })
+                    });
+
+                    $(document).ready(function () {
+                        $('#tema').change(function (e) {
+                          if ($(this).val() === "") {
+                            $('#boton-form').prop("disabled", false);
+                          } else {
+                            $('#boton-form').prop("disabled", true);
+                          }
+                        })
+                      });
+              </script>
+
+
+
+
             <!--input type="text" id="fname" name="fname" value="" placeholder=""/--><br />
             <div class="nombreOP">
-              <input type="text" id="nombre" name="nombre" placeholder="Indicanos tu nombre (opcional)"/><br /><br />
+              <input type="text" id="nombre" name="nombre" disabled placeholder="Indicanos tu nombre (opcional)"/><br /><br />
             </div>
 
         <div class="botonEnviar">
-          <input id="boton-form" type="submit" value="Enviar" />
+          <input id="boton-form" type="submit" value="Enviar" disabled />
         </div>
+
           </form>
 
         <div class="contenedorPlaca">
-          <img src="img/placaCont.png" alt="" width="94%">
+          <img src="img/placaCont.png" alt="" >
         </div>
       </div>
       </section>
@@ -601,6 +638,7 @@
   </section>
 </section>
 
+</section>
 
   </body>
 </html>
