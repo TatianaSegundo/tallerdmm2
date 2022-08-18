@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*-------------------------ENCABEZADO-------------------------------*/
+.encabezado{
+  /*
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: pointer; */
+    margin-left: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado .fila1 ul li, .fila2 ul li{
+    list-style: none;
+    float: left;
+}
+
+.encabezado .fila1{
+    background-color: #F3F3F3;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.encabezado .fila2{
+  background-color: #F3F3F3;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+}
+
+.encabezado .fila1 ul li, .encabezado .fila2 ul li{
+    padding: 5px;
+}
+
+.encabezado .fila4 .contenedor-vacio{
+    background-color: #F3F3F3;
+    width: 200px;
+    height: 0%;
+}
+.fila3 img {
+  margin-left: 170px;
+}
+.fila5 img {
+  margin-left: -140px;
+}
+/*
+.encabezado .fila1 li{
+  padding-top: 7px;
+}
+
+.encabezado .fila2 li{
+  padding-top: 12px;
+}
+*/
+#general {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#header1{
+  margin-left: 20px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+/*-------------------------CUERPO1-------------------------------*/
+
+#seccion-cuerpo1 .titulo1{
+/*
+  margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-size: 1.6rem;
+    color: #490000; */
+    padding: 1px;
+    margin-left: 0px;
+    /* background-color: rgba(192, 0, 0, 1); */
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+}
+#seccion-cuerpo1 .titulo1 h1{
+  font-size: 3rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: normal;
+  color: #490000;
+}
+#seccion-cuerpo1 .subtitulo{
+  display: flex;
+  background: #6F1111;
+  border-radius: 5px;
+  height: 65px;
+  align-items: center;
+  color: white;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+
+}
+
+/*-------------------------DROPDOWN-------------------------------*/
+
+#seccion-cuerpo1 .temas, .ordenar{
+    font-family:'Helvetica', Arial, sans-serif;
+}
+
+#seccion-cuerpo1  select{
+    /* margin-left: 60px; */
+    background: #F3F3F3;
+    color: rgb(0, 0, 0);
+
+    /* position: relative; */
+    margin-top: 30px;
+
+    margin-right: 1.7%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    width: 30.7vw;
+    height: 68px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.dropdownVotar{
+
+    display: flex;
+
+    height: 100px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/*-------------------------PLACAS-------------------------------*/
+
+.contenedor-placas {
+    display: flex;
+    /*flex-direction: row;
+        width: 30.7vw;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.contenedor-placas .contenedor{
+  background-color: #ffffff;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+/*-------------------------BOTÓN DE LIKE------------------------*/
+.contenedor-placas .likear{
+    font-family: 'Roboto';
+    width: 8vw;
+    height: 6vh;
+    background:#FFE145;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.likes{
+justify-content: left;
+}
+
+/*----------------CONT DE NUMERO DE LIKES----------------------*/
+.contenedor-placas .likes span{
+    background: #FFED92;
+    width: 2.5vw;
+    height: 6vh;
+    font-weight: 500;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 13px;
+    font-family: 'Roboto';
+
+}
+
+
+/*-------------------BOTÓN VER MÁS-------------------*/
+.contenedor-placas .vermas{
+    justify-content: center;
+    width: 12%;
+    background: #F3F3F3;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3.68254px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+/*-------------------PLACAS QUE SE VAN A VER DESPUES DEL VER MAS-------------------*/
+.contenedores-ver-mas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedores-ver-mas div.hide {
+    display: none;
+}
+
+.contenedor {
+  width: 30.5vw;
+    /*
+    height: 200px;
+        align-items: flex-start;
+    */
+    background-color: grey;
+margin-bottom:10px;
+border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+        justify-content: flex-end;
+}
+
+.contenedor img{
+  width: 30.7vw;
+}
+.container .card2 img{
+  width: 30.7vw;
+}
+
+#ver-mas.hide {
+    display: none;
+}
+
+
+
+/*-----------------------------------------CUERPO2--------------------------------*/
+
+
+/*-----------------------CONT TITUTILO ANTERIORES+VOTADAS--------------------------------*/
+#seccion-cuerpo2 .anteriores-votadas{
+    color: #F3F3F3;
+    background: #6F1111;
+    border-radius: 5px;
+    font-style: normal;
+    height: 25px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+
+}
+
+/*-----------------------SUBTITULO--------------------------------*/
+#seccion-cuerpo2 .subtitulo-masvotadas h3{ 
+  display: flex;
+  width: 108px;
+  height: 50px;
+  /* background: #EBC351; */
+  border-radius: 5px;
+  align-items: center;
+  color: #6F1111;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 1.7em;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+/*-----------------------BOTONES DE TEMAS--------------------------------*/
+#seccion-cuerpo2 #botones-masvotadas{
+    display: flex;
+    justify-content: space-between;
+}
+
+#seccion-cuerpo2 #botones-masvotadas button{
+   width: 310px;
+   height: 58px;
+
+   border-style: none;
+   background: #F3F3F3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   text-align: left;
+   padding-left: 20px;
+   font-size: 1.1em;
+   font-weight: 500;
+}
+#botones-masvotadas{
+  display: flex;
+    justify-content: space-between;
+}
+#botones-masvotadas button:hover{
+    width: 346px;
+    height: 58px;
+    border-style: none;
+    background: #F3F3F3;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: left;
+    color: darkgray;
+    padding-left: 20px;
+}
+
+#botones-masvotadas button:hover{
+    color: darkgray;
+      }
+      
+      #botones-masvotadas button:focus {
+        color: darkgray;
+          }
+ /*-----------------------BOTONES VOTADOS--------------------------------*/
+          .boton-votar-votado2{
+            font-family: 'Roboto';
+            width: 8vw;
+            height: 37px;
+            background:rgba(255, 237, 146, 1);
+            border-radius: 5px 0px 0px 5px;
+            border: none;
+            color: #000000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 25px;
+          }
+          .likes{
+            justify-content: left;
+          }
+          
+          .boton-votar span {
+            background:rgba(255, 225, 69, 1);
+            font-weight: 500;
+            border-radius: 0px 5px 5px 0px;
+            padding-top: 10px;
+            padding-bottom: 8px;
+            padding-left: 7px;
+            padding-right: 7px;
+            font-family: 'Roboto';
+          }
+          .boton-votar {
+            display: flex;
+            align-items: baseline;
+          }
+ /*-----------------------PODIO--------------------------------*/
+#seccion-cuerpo2 .subtitulo-podio, .subtitulo-siguientepuesto {
+  display: flex;
+  width: 29.5vw;
+  height: 50px;
+  background: #EBC351;
+  border-radius: 5px;
+  align-items: center;
+  color: black;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 1.3em;
+  margin-top: 80px;
+  margin-bottom: 30px;
+ }
+
+ #seccion-cuerpo2 .container{
+    display: flex;
+    justify-content: space-between;
+
+
+ }
+ #seccion-cuerpo2 .container img{
+ width: 30.7vw;
+ }
+ /*---------------------BOTÓN CARGAR MÁS-----------------------------*/
+ .cargarmas{
+    display: flex;
+    justify-content: center;
+    /*margin-top: 10px;*/
+ }
+ .cargarmas button{
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    background: #F3F3F3;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3.68254px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+ }
+
+ .cargarmas button:hover{
+    background: #C00000;
+    border:1px solid #C00000;
+    color: white;
+  }
+
+
+
+
+   /*---------------------CREAR PLACA-----------------------------*/
+   #form-placa{
+    background-color: #E8BF0A;
+    /*width: 70%;
+    margin-left: 230px;
+    height: 40px;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    }
+
+    #form-placa h3{
+        text-align: center;
+        font-family: 'Roboto';
+        font-style:normal;
+        font-weight: 600;
+        font-size: 35px;
+      }
+
+      #columna-madre-placas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      #columna-placas{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #columna-placas2{
+      margin-left: 25px;
+      }
+      
+      #columna-placas2 img{
+        width:30.7vw;
+        height:320px;
+        }
+
+        #dropdownPlaca {
+            font-family:'Helvetica', Arial, sans-serif;
+        }
+
+        #dropdownPlaca select{
+            background: #C00000;
+            box-shadow: 0px 4.53257px 4.53257px rgba(0, 0, 0, 0.25);
+            border-radius: 3.56729px 3.56729px 0px 0px;
+            margin-right:1.7%;
+            padding-left:15px;
+            cursor:pointer;
+            border: none;
+            border-radius: 5px 5px 0px 0px; 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width:30.9vw;
+            height: 59px;
+            font-size: 1.2em;
+            color: white;
+          }
+
+          #dropdownPlaca select option {
+            background-color: white;
+            font-size: 14px;
+            width: 160px;
+            height: 40px;
+            font-size: 0.9em;
+            color:rgb(0, 0, 0);
+            padding:10px;
+            border-radius:0.3em;
+          }
+
+          textarea{
+            resize: none; /*esto es para que no se le pueda cambiar el tamaño*/
+          }
+
+          #texto-form-placa{
+            min-height: 140px;
+            padding: 10px 1px 10px 10px;
+            width:30.1vw;
+            font-family: 'Roboto';
+            font-style: italic;
+            background: #FFFFFF;
+            box-shadow: 0px 4.53257px 4.53257px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 0px 5px 5px; 
+            border: none; 
+            font-size: 1em;
+          }
+        
+          .cont-formulario{
+            width:30.1vw;
+            height: 59px;
+            padding: 5px 1px 5px 10px;
+            background: #FFFFFF;
+            font-family: 'Roboto';
+            font-style: italic;
+            box-shadow: 0px 4.53257px 4.53257px rgba(0, 0, 0, 0.25);
+            border-radius: 5px 5px 5px 5px;
+            border: none; 
+            font-size: 1em;
+          }
+
+          #contenedor-nombre-placa-form{
+            margin-top: 30px;
+          }
+        
+           #boton-placa-form{
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+           }
+        
+           #boton-placa-form button{
+            width: 10vw;
+            height: 7vh;
+            border-style: none;
+            background: #F3F3F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+           }
+
+           #boton-placa-form button:hover{
+            width: 10vw;
+            height: 7vh;
+            border-style: none;
+            background: #C00000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            color: white;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+              }
+
+
+/*---------------------NOTICIAS RELACIONADAS-----------------------------*/
+.noticrel {
+  display: flex;
+  background: #6F1111;
+  border-radius: 5px;
+  height: 65px;
+  align-items: center;
+}
+
+.noticrel h2{
+    color:white;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.noticrel h3 {
+    margin-left: 930px;
+    color: rgba(255, 255, 255, 1) ;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  .noticrel img {
+    padding: 10px;
+    width: 20px;
+  }
+
+
+  /*---------------------CARD CON LAS NOTAS-----------------------------*/
+  #notrel .container{
+    width: 100%;
+  }
+
+  #notrel .container .card{
+    height: 330px;
+    background: #F3F3F3;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    margin: 20px;
+
+  }
+
+  /*#notrel .container .card img{
+    width: 100%;
+    /*display: block;
+  }*/
+
+  #notrel .container .card h3{
+    position: absolute;
+    text-align: left;
+    font-family: 'Roboto';
+    padding: 15px;
+  }
+
+  #notrel .container .card h3:hover{
+    transform: translateY(-75px);
+    transition: all 0.3s ease-out;
+  }
+  
+  #notrel .container .card .descripcion{
+    font-family: 'Roboto';
+    padding: 15px;
+    opacity: 0;
+    transition: all 0.3s ease-out 0.3s;
+  }
+  
+  #notrel .container .card:hover .descripcion{
+  opacity: 1;
+  }
+  
+  
+  #notrel .container .card .emojis{
+    position: absolute;
+    left: 50px;
+  }
+
+
+   /*----------------------------------FOOTER-----------------------------*/
+   .contFooter{
+    background-color: #2C2222;
+    padding: 10px;
+    max-width: 100%;
+    
+  }
+
+  .contFooter img{  
+    margin-left: 25px;
+  }
+
+  .columnasFooter{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contFooter h3{
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .contFooter .colum1Footer ul li, .colum2Footer ul li, .colum3Footer ul li, .colum4Footer ul li{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 0.9rem;
+  }
+
+   .contFooter .colTxtInfo ul{
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .colTxtInfo ul li{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 0.8rem;
+  }
+
+
+  .contFooter .colInfo ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colInfo ul li{
+    list-style: none;
+  }
+  
+
+
+
+/*----------------------------FORM----------------------------*/
+.contform {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  padding: 0px 20px;
+}
+#seccion-cuerpo3 form select {
+  width: 30vw;
+  height: 63px;
+    padding: 5px 1px 5px 10px;
+    margin-top: 0;
+    /*background: #FFFFFF;*/
+    font-family: 'Roboto';
+    font-style: italic;
+    box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    font-size: 1em;
+}
+
+form textarea{
+  width: 29.7vw;
+    height: 96px;
+    padding: 5px 1px 5px 5px;
+    font-family: 'Roboto';
+    font-style: italic;
+    box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    font-size: 1em;
+}
+
+textarea:disabled {
+  background: #DDDDDD;
+  box-shadow: none;
+}
+
+.nombreOP input:disabled {
+  background: #DDDDDD;
+  box-shadow: none;
+}
+
+input[type="submit" i]:disabled {
+  background: #814646;
+  box-shadow: none;
+    color: rgba(255, 255, 255, 0.53);
+}
+
+form  .nombreOP input{
+  width: 29.4vw;
+  height: 40px;
+  padding: 5px 1px 5px 10px;
+  background: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: italic;
+  box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  font-size: 1em;
+  color: black;
+}
+
+/*---------------BOTÓN ENVIAR----------------------*/
+form input{
+  width: 30.3vw;
+  height: 40px;
+  padding: 5px 1px 5px 10px;
+  background: #620707;
+  font-family: 'Roboto';
+  font-style: italic;
+  box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+
+.feedb{
+  display: flex;
+  justify-content: center;
+}
+
+.feedb .compartir{
+  padding: 0px 20px;
+
+}
+
+#seccion-feedback {
+  background-image: url(../img/placaCont.png);
+   background-repeat: no-repeat; 
+  width: 34.2%;
+  height: 100%;
+  text-align: center;
+}
+
+#seccion-feedback h3{
+  margin-top: 100px;
+  font-size: 35px;
+  font-family: 'Bebas Neue';
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+#seccion-feedback p{
+  font-family: 'Roboto';
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.mostrar {
+  /*display: flex;*/
+}
+.no-mostrar {
+  display: none !important;
+}
+
+
+
+.fondo-popup {
+  align-items: center;
+  background-color: #E8BF0A;
+  height: 70vh;
+  /*position: fixed;*/
+  /*width: 30vw;
+  height: 80vh;
+  /*background-color: rgba(0, 0, 0, 0.75);*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.fondo-popup h1{
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size:1.5rem;
+}
+.fondo-popup h3{
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 2rem;
+}
+.fondo-popup button{
+  font-family: 'Roboto';
+  cursor: pointer;
+   margin: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background: #F3F3F3;
+   box-shadow: 0px 9.20635px 7.36508px rgba(0, 0, 0, 0.25);
+   border-radius: 3.68254px;
+   border: none;
+   width: 120px;
+   height: 35px;
+   font-style: bold;
+}
+
+.fondo-popup button:hover{
+  background: #C00000;
+  color: white;
+}
+
+.popup {
+  width: 30%;
+  align-items: center;
+  border-radius: 5px;
+  /* max-height: 90%;
+}
