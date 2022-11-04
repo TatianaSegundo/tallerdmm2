@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/trivia.css">
+    <title>Prepara tu mochila</title>
+</head>
+<body>
+
+    <section id="nuevobody">
+         <!----------------TITULO Y SUBTITULO--------------------------->
+         <div id=encabezado>
+        <div class="trivia_titulo">
+            <h1>PREPARATE PARA UN VIAJE SOSTENIBLE</h1>
+        </div class="trivia_subtitulo">
+        <h2>Equipa tu mochila con los objetos más sustentables para un viaje más limpio</h2>
+        <div>
+        </div>
+            
+ <!----------------CONTENEDOR PRESIONABLES + VENTANA VISUALIZACION--------------------------->
+   <div class="contenedor_grilla">
+    <div class="presionables_grilla">
+        <div class="trivia_grilla1">
+            <div class="contGrilla">
+
+                 <img id="theImage"type="button" id="theButton" value="click me!" 
+                 onclick="pictureChange()" src="img/objetosTrivia/bolsoTrivia.png">
+                 
+            </div>
+         <div class="contGrilla">
+                 <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+             </div>
+         <div class="contGrilla">
+                  <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+         </div>
+         <div class="contGrilla">
+                 <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+         </div>
+        </div>
+    <div class="trivia_grilla1">
+        <div class="contGrilla">
+                 <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+        </div>
+    <div class="contGrilla">
+        <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+    </div>
+    <div class="contGrilla">
+        <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+    </div>
+    <div class="contGrilla">
+        <img src="img/objetosTrivia/bolsoTrivia.png" alt="">
+    </div>
+</div>
+
+</div>
+         <!----------------VENTANA VISUALIZAR--------------------------->
+<div id="ventanaGrilla">
+    <div class="contGrilla">
+        <!-- <img src="img/objetosTrivia/bolsoTrivia.png" alt=""> -->
+        <p id="texto_ventana">Hacé click en cualquier objeto para saber qué tan sustentable es.</p>
+    </div>
+
+</div>
+
+ <!----------------MOCHILAFEEDBACK+BARRA--------------------------->
+ <div id="feedback_trivia">
+    <img id=mochila id="mochila"type="button" id="theButton" value="click me!" 
+    onclick="pictureChange()"src="img/objetosTrivia/estadosMochilaFeedback/mochilaInicial.png" alt="">
+    <p id="contador_mochila">0/4</p>
+    <img id=barra src="img/objetosTrivia/barraTrivia/barra00.png" alt="">
+ </div>
+</div>
+   
+
+  
+    </section>
+    <div class="botonContinuar">
+        <a href="mapa.html">
+            <button id="button_saltear">Saltar al mapa</button>
+            </a> 
+
+    </div>
+ 
+</body>
+</html>
+
+
+<script>
+ function pictureChange()
+  {
+   document.getElementById("theImage").src="img/objetosTrivia/bolsoTriviaSeleccionado.png";
+   document.getElementById("mochila").src="img/objetosTrivia/estadosMochilaFeedback/mochila01.png";
+  }
+</script>
+
+
+

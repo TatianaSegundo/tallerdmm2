@@ -1,0 +1,12 @@
+body
+{
+margin: 0;
+padding: 0;
+background-image: url(../img/mapa/Mapa.png);
+background-size:cover;
+}
+#loscardones{
+    width: 90px;
+    margin-left: 44%;
+    margin-top: 6px;
+}

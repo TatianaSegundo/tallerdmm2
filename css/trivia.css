@@ -1,0 +1,75 @@
+*body
+{
+margin: 0;
+padding: 0;
+}
+#nuevobody{
+    margin-left: 80px;
+    margin-top: 60px;
+}
+#encabezado{
+    margin-left: 100px;
+}
+.contenedor_grilla{
+    display: flex;
+   /* justify-content: center; */
+    margin-top: 100px;
+
+    
+}
+.presionables_grilla{
+
+   text-align: center;
+   height: 40vh;
+
+
+}
+.trivia_grilla1{
+    display: flex;
+    margin: 0 auto;
+}
+.contGrilla{
+    height: 160px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 0px;
+    background-color: aquamarine;
+}
+.contGrilla img{
+  align-content: center;
+  width: 60px;
+  padding-top: 30px;
+ 
+     justify-content: center;
+ }
+#ventanaGrilla{
+   display: flex;
+   flex-direction: row;
+   background-color: aquamarine;
+   height: 340px;
+   align-items: center;
+   margin-top: 10px;
+   margin-left: 10px;
+   
+}
+#feedback_trivia{
+    height: 40vh;
+    margin-left: 80px;
+}
+#mochila{
+    display: flex;
+    flex-direction: column;
+   
+    height: 160px;
+    padding-top: 30px;
+}
+#barra{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+#contador_mochila{
+    text-align: center;
+}
+
+
